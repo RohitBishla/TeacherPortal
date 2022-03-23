@@ -1,0 +1,288 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+
+body {
+  background-color: #f4f4f4;
+}
+
+body, input, select, textarea, button {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+	font-size: 12px;
+}
+
+.header-bar {
+  padding: 5px 50px;
+  background-color: #4A6491;
+  border-bottom: 2px #fff solid;
+
+  background-color: #4A6491;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4A6491), to(#30395C)); 
+  background-image: -webkit-linear-gradient(top, #4A6491, #30395C); 
+  background-image:    -moz-linear-gradient(top, #4A6491, #30395C); 
+  background-image:     -ms-linear-gradient(top, #4A6491, #30395C); 
+  background-image:      -o-linear-gradient(top, #4A6491, #30395C); 
+  background-image:         linear-gradient(top, #4A6491, #30395C);
+
+
+  -webkit-box-shadow: 0px 0px 10px 0px #fff;
+  box-shadow: 0px 0px 10px 0px #fff;
+
+}
+
+
+.footer-container,
+.body-wrapper {
+  width: 850px;
+  color: #999;
+}
+
+.body-wrapper {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin: 50px auto 30px auto;
+  
+  -webkit-box-shadow: 0px 0px 2px 0px #ccc;
+          box-shadow: 0px 0px 2px 0px #ccc;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-container {
+  margin: 0px auto;
+}
+
+.footer-container .footer-links {
+  float: right;
+  text-align: right;
+  white-space: nowrap;
+  color: #555;
+}
+
+.footer-container .footer-links a {
+  color: #999;
+}
+
+.footer-container .footer-links a:hover {
+  text-decoration: underline;
+  color: #555;
+}
+
+.footer-info {
+  padding: 0px 50px;
+}
+
+.body-container {
+  padding: 0px 0px 80px 0px;
+  background: #fff url('/images/clouds.jpg') no-repeat bottom center;
+}
+
+.body-container h1 {
+  font-size: 28px;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  border-bottom: 1px #ccc solid;
+  padding: 10px 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: #f4f4f4;
+}
+
+.login-container {
+  
+}
+
+  .login-container .login-static {
+    float: left;
+    width: 60%;
+    border-right: 1px #eee solid;
+    min-height: 300px;
+  }
+
+  .login-container .login-form {
+    float: right;
+    width: 39%;
+  }
+  
+  .login-container .login-form fieldset {
+    padding: 10px;
+  }
+  
+    .login-form .field {
+      margin-top: 10px;
+    }
+
+      .login-form .field label {
+        clear: both;
+        display: block;
+        font-size: 11px;
+        margin-bottom: 2px;
+      }
+
+      .login-form .field input {
+        width: 280px;
+        font-size: 16px;
+        padding: 7px;
+        font-weight: bold;
+        border: 1px #ccc solid;
+        box-shadow: inset 0px 0px 10px 0px rgba(225, 225, 225, 0.75);
+        -moz-box-shadow: inset 0px 0px 10px 0px rgba(225, 225, 225, 0.75);
+        -webkit-box-shadow: inset 0px 0px 10px 0px rgba(225, 225, 225, 0.75);
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        background-clip: padding-box;
+      }
+      
+      .login-form .checkbox-field input {
+        width: auto;
+        position: relative;
+        top: 2px;
+        padding: 0px;
+        border: 0px;
+      }
+      
+      .login-form .field label {
+        display: inline-block;
+      }
+      
+input[type=password]:focus,
+input[type=text]:focus,
+input[type=input]:focus,
+textarea:focus {
+	border-color:#aaa;	
+}
+
+.login-form fieldset p {
+  padding: 15px 10px 15px 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+}
+
+button {
+  background-color: #2984C6;
+	background-image: -moz-linear-gradient(top, #64B4E9, #2984C6);
+	/* FF3.6 */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #64B4E9),
+		color-stop(1, #2984C6) ) !important; /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(#64B4E9, #2984C6);
+	/* Chrome 10+, Saf6 */
+	background-image: linear-gradient(top, #64B4E9, #2984C6);
+	filter:progid:DXImageTransform.Microsoft.gradient ( startColorStr =#64B4E9, EndColorStr = #2984C6 ); /* IE6 & IE9 */
+	color: #FFF !important;
+	font-size: 12px;
+	border: 1px solid #3596E9;
+	border-bottom: 1px solid #2C7EC4;
+	-moz-border-radius: 4px; /* FF1+ */
+	-webkit-border-radius: 4px; /* Saf3-4, iOS 1+, Android 1.5+ */
+	border-radius: 4px; /* Opera 10.5, IE9, Saf5, Chrome, FF4 */
+	font-weight: normal;
+	display: inline-block;
+	padding: 3px 10px;
+	text-shadow: 0 -1px #5077c4;
+	cursor: pointer;
+}
+
+button[disabled] {
+  background-color: #ccc;
+  background-image: none !important;
+  border: 1px solid #aaa;
+}
+
+.login-form fieldset button {
+  
+}
+
+.button-container {
+  text-align: right;
+  padding: 0px 10px;
+}
+
+.button-container button  {
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+#message-box {
+  padding: 5px;
+}
+
+.error {
+  font-weight: bold;
+  color: #f00;
+}
+
+.static-flow {
+  margin-top: 30px;
+  font-family: Cambria, Garamond, "Times New Roman", serif;
+  
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+
+ 
+  background-clip: padding-box;
+  padding: 20px;
+  position: relative;
+  height: 180px;
+}
+
+.static-flow li {
+  position: absolute;
+  top: 20px;
+  display: none;
+  width: 93%;
+}
+
+.static-flow li.active {
+  
+}
+
+.static-flow h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.static-flow p {
+  font-size: 18px;
+  padding: 5px;
+  color: #aaa;
+}
+
+.static-flow p .quote {
+  font-size: 32px;
+  line-height: 0px;
+  position: relative;
+  top: 8px;
+  color: #ccc;
+}
+
+.items-selector {
+  text-align: center;
+}
+
+.items-selector li {
+  display: inline-block;
+  *display: inline;
+  padding: 0px 5px;
+}
+
+.items-selector li a{
+  font-size: 50px;
+  text-decoration: none;
+  color: #ddd;
+  line-height: 10px;
+  text-shadow: 0px 0px 8px #eee;
+  filter: dropshadow(color=#eee, offx=0, offy=0);
+}
+
+.items-selector li a.active {
+  text-shadow: 0px 0px 8px #2984C6;
+  filter: dropshadow(color=#2984C6, offx=0, offy=0);
+  color: #2984C6;
+}
+
+.footer-info {
+  text-transform: capitalize;
+}
