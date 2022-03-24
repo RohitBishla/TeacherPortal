@@ -11,7 +11,36 @@
 <body>
 <div class="container">
     <div class="main-body">
-    
+      <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAtBalido00_KSYq9upt38QcX9fCBAviVU",
+      authDomain: "teacher-portal-ece05.firebaseapp.com",
+      projectId: "teacher-portal-ece05",
+      storageBucket: "teacher-portal-ece05.appspot.com",
+      messagingSenderId: "835115360458",
+      appId: "1:835115360458:web:5ecb698dfacc06f77d9433",
+      measurementId: "G-7DP4K405K4"
+    };
+    firebase.initializeApp(config);
+  </script>
+      <script>
+        var database = firebase.database();
+        // console.log(database)
+        const dbRef = firebase.database().ref();
+        dbRef.child("1").get().then((snapshot) => {
+          if (snapshot.exists()) {
+            console.log(snapshot.val());
+          } else {
+            console.log("No data available");
+          }
+        }).catch((error) => {
+          console.error(error);
+        });
+      </script>
+      
+
 
           <nav aria-label="breadcrumb" class="main-breadcrumb">
             <ol class="breadcrumb">
