@@ -7,11 +7,15 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     var user = firebase.auth().currentUser;
 
-    if(user != null){
-
+    if (user != null) {
       var email_id = user.email;
-      document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
+      let text = "Account";
+      let result = text.link("profile.html");
 
+      document.getElementById("user_para").innerHTML =
+        "Welcome User : " + result;
+      // object.addEventListener("click", myScript);
+      // <p>Hello</p>;
     }
 
   } else {
